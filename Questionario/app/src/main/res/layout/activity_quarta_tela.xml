@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/dark_grey"
     android:layout_height="match_parent">
@@ -47,8 +46,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="355dp"
+        android:layout_height="208dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -59,19 +58,19 @@
         <RadioButton
             android:id="@+id/opcaoUm"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:background="@drawable/bg_rounded"
             android:backgroundTint="@color/cor_cinza"
             android:text="Entre janeiro e março"
             android:textAlignment="textStart"
-            android:textSize="25sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
             android:id="@+id/opcaoDois"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_rounded"
             android:backgroundTint="@color/cor_cinza"
@@ -84,7 +83,7 @@
         <RadioButton
             android:id="@+id/opcaoTres"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_rounded"
             android:backgroundTint="@color/cor_cinza"
@@ -98,7 +97,7 @@
         <RadioButton
             android:id="@+id/opcaoQuatro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_rounded"
             android:backgroundTint="@color/cor_cinza"
@@ -108,7 +107,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-</RadioGroup>
+    </RadioGroup>
 
 
     <Button

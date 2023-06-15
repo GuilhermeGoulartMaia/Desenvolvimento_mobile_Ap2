@@ -36,7 +36,7 @@ class QuartaTela : AppCompatActivity(){
 
         val botaoAvancar: Button = findViewById(R.id.botaoAvancar)
         botaoAvancar.setOnClickListener {
-            val intent = Intent(this, TerceiraTela::class.java)
+            val intent = Intent(this, ResultadoTela::class.java)
             startActivity(intent)
         }
     }

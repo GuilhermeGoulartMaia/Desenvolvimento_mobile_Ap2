@@ -1,16 +1,26 @@
 package com.example.questionario
 
-import android.widget.Button
-import android.widget.ImageView
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import android.widget.Button
 import android.widget.TextView
 
 class ResultadoTela: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado_tela)
+
+        val buttonWeb = findViewById<Button>(R.id.buttonGIT)
+
+        buttonWeb.setOnClickListener {
+            val webpage =
+                Uri.parse("https://github.com/guilhermeMaiaSupernova/Desenvolvimento_mobile_Ap2.git")
+            val intent = Intent(Intent.ACTION_VIEW, webpage)
+            startActivity(intent)
+        }
 
         var textResp: String = ""
 
@@ -104,14 +114,16 @@ class ResultadoTela: AppCompatActivity() {
         } else if (Dados.musica == 2 && Dados.preco == 1 && Dados.data == 1) {
             textResp = "Nuth Club"
             textDesc ="  Casa noturna na Avenida Armando Lombardi, que é “a avenida dos discos na Barra da Tijuca”. Tocar música eletrônica e outros estilos também!"
-        } else if (Dados.musica == 2 && Dados.preco == 1 && Dados.data == 2) {
+        } else {
             textResp = "Zero Zero "
-            textDesc ="Amplo espaço para dançar, com um restaurante ao lado da pista e que fecha por volta da meia-noite, quando começa a encher!\n" +
-                    "Se você tiver sorte, poderá encontrar alguns famosos por lá!"
+            textDesc =
+                "Amplo espaço para dançar, com um restaurante ao lado da pista e que fecha por volta da meia-noite, quando começa a encher!\n" +
+                        "Se você tiver sorte, poderá encontrar alguns famosos por lá!"
+        }
 
 
             val textoResposta: TextView = findViewById(R.id.Resposta)
-            textoResposta.text = "Que tal conferir a festa:  $textResp"
+            textoResposta.text = "Que tal conferir a festa: $textResp"
 
 
             val textoRespostaDesc: TextView = findViewById(R.id.RespostaDesc)
@@ -119,6 +131,6 @@ class ResultadoTela: AppCompatActivity() {
             textoRespostaDesc.movementMethod = ScrollingMovementMethod()
 
 
+
         }
     }
-}

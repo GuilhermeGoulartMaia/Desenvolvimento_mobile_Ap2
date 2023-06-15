@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_grey">
@@ -58,7 +57,7 @@
         app:layout_constraintVertical_bias="0.232">
 
         <RadioButton
-            android:id="@+id/segundaOpcao"
+            android:id="@+id/primeiraOpcao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -71,7 +70,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
-            android:id="@+id/terceiraOpcao"
+            android:id="@+id/segundaOpcao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -85,7 +84,7 @@
 
 
         <RadioButton
-            android:id="@+id/quartaOpcao"
+            android:id="@+id/terceiraOpcao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -98,7 +97,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
-            android:id="@+id/quintaOpcao"
+            android:id="@+id/quartaOpcao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
